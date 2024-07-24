@@ -3,14 +3,14 @@
 import 'package:flutter/material.dart';
 import 'package:lap1_project_iti/login_ui/widgets/text_form_field.dart';
 
-class TextFormFields extends StatefulWidget {
-  const TextFormFields({super.key});
+class LoginTextFormFields extends StatefulWidget {
+  const LoginTextFormFields({super.key});
 
   @override
-  State<TextFormFields> createState() => _TextFormFieldsState();
+  State<LoginTextFormFields> createState() => _LoginTextFormFieldsState();
 }
 
-class _TextFormFieldsState extends State<TextFormFields> {
+class _LoginTextFormFieldsState extends State<LoginTextFormFields> {
   bool _obscureText = true;
 
   void _togglePasswordView() {
@@ -25,7 +25,7 @@ class _TextFormFieldsState extends State<TextFormFields> {
       children: [
         const CustomTextFormField(
           hintText: "your email ",
-          prefixIcon: Icon(Icons.email_outlined),
+          prefixIcon: Icon(Icons.person),
         ),
         const SizedBox(
           height: 20,
@@ -45,3 +45,4 @@ class _TextFormFieldsState extends State<TextFormFields> {
     );
   }
 }
+

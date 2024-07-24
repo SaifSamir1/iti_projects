@@ -1,4 +1,7 @@
 
+import 'dart:ui';
+
+const defaultColor = Color(0xffF83758);
 
 List<Map<String, dynamic>> apiData = [
   {

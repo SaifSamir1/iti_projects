@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField(
       {super.key,
-        required this.hintText,
-        this.prefixIcon,
-        this.suffixIcon,
-        this.obscureText});
+      required this.hintText,
+      this.prefixIcon,
+      this.suffixIcon,
+      this.obscureText});
 
   final String hintText;
   final Widget? prefixIcon;
@@ -18,7 +18,13 @@ class CustomTextFormField extends StatelessWidget {
     return Container(
       height: 60,
       decoration: BoxDecoration(
-          color: Colors.grey[300], borderRadius: BorderRadius.circular(5)),
+        color: const Color(0xFFF3F3F3),
+        borderRadius: BorderRadius.circular(15),
+        shape: BoxShape.rectangle,
+        border: Border.all(
+          color: const Color(0xFFA8A8A9),
+        ),
+      ),
       child: Center(
         child: TextFormField(
           obscureText: obscureText ?? false,
