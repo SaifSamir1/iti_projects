@@ -22,17 +22,20 @@ class _LoginTextFormFieldsState extends State<LoginTextFormFields> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        Text("Email Address",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Colors.grey[600]),),
+        const SizedBox(height: 5,),
         const CustomTextFormField(
-          hintText: "your email ",
-          prefixIcon: Icon(Icons.person),
+          hintText: " ",
         ),
         const SizedBox(
           height: 20,
         ),
+        Text("Password",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w500,color: Colors.grey[600]),),
+        const SizedBox(height: 5,),
         CustomTextFormField(
-          hintText: "your password",
-          prefixIcon: const Icon(Icons.lock_open),
+          hintText: "",
           obscureText: _obscureText,
           suffixIcon: IconButton(
             icon: Icon(

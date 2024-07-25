@@ -51,7 +51,7 @@ class HomeScreenBody extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-            const ItemsListView(),
+            const ItemsGridView(),
           ],
         ),
       ),

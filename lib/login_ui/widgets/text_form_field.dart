@@ -21,9 +21,6 @@ class CustomTextFormField extends StatelessWidget {
         color: const Color(0xFFF3F3F3),
         borderRadius: BorderRadius.circular(15),
         shape: BoxShape.rectangle,
-        border: Border.all(
-          color: const Color(0xFFA8A8A9),
-        ),
       ),
       child: Center(
         child: TextFormField(
