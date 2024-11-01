@@ -1,8 +1,5 @@
 
 import 'package:flutter/material.dart';
-
-import '../../e_commarce_app_ui_me/models/category_item_model.dart';
-import '../../e_commarce_app_ui_me/models/main_list_item_model.dart';
 import '../../e_commarce_app_ui_me/widgets/items_list_view.dart';
 import '../widgets/category_list_view.dart';
 import '../widgets/header_section.dart';
